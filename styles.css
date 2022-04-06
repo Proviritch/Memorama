@@ -42,13 +42,17 @@ body {
 }
 
 .header-div2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
 }
 
 .header-div2-p {
     margin-left: 1em;
+}
+
+.record {
+    font-size: 1rem;
 }
 
 /* .main {
@@ -68,7 +72,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 142.5px 142.5px 142.5px;
     grid-gap: 1em;
-    
 }
 
 .main-div {
@@ -92,6 +95,8 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
+/*     opacity: 0;
+    transition: opacity 1s; */
     /* background-image: url('img/ekko.jpg'); */
     /* background-size: cover; */
     font-family: 'Beaufort for LOL';
@@ -123,3 +128,32 @@ body {
 .turn-card {
     transform: rotateY(180deg);
 }
+
+.marcador {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transition: opacity 0.5s;
+    transition-timing-function: cubic-bezier(1,-0.63,.86,.96);
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 10rem;
+    z-index: 100;
+    pointer-events: none;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.newgame {
+    opacity: 1;
+    font-size: 5rem;
+    border: 0.2em solid white;
+    background: rgba(255, 255, 255, 0.37);
+    text-align: center;
+    pointer-events: initial;
+    cursor: pointer;
+}
+
