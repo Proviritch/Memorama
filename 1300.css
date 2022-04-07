@@ -1,0 +1,28 @@
+.main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main-div {
+    width: 10vw;
+    height: 14.25vw;
+}
+
+.main-div-card-info {
+    font-size: 2rem;
+}
+
+.header-div2 {
+    font-size: 3.5rem;
+}
+
+.record {
+    font-size: 2rem;
+}
+
+.marcador {
+    font-size: 15rem;
+}
+
+.newgame {
+    font-size: 7.5rem;
+}

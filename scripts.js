@@ -1,4 +1,6 @@
-/* 
+(() => {
+
+    /* 
 *********************************************
 Código para ordenar las cartas aleatoriamente
 *********************************************
@@ -230,9 +232,9 @@ let game = (e) => {
                         sessionStorage.numCards = 0;
                         main.addEventListener('click', game)
 
-                        console.log("Adios");
+                        //console.log("Adios");
                     })
-                console.log("Hola");
+                //console.log("Hola");
             })
                
     }
@@ -273,5 +275,11 @@ const newGame = () => {
 Fin código para comprobar si el usuario encuentra ambas cartas o no
 **********************************************************************
 */
+
+})();
+
+
+
+
 
 

@@ -19,6 +19,7 @@ body {
     background: var(--color-fondo);
     background-image: url("img/fondo_mobile.webp");
     background-position: -100% 0;
+
 }
 
 .header {
@@ -35,10 +36,12 @@ body {
 
 .header-div1-img {
     width: 50%;
+    max-width: 320px;
 }
 
 .header-div2-img {
     width: 10%;
+    max-width: 60px;
 }
 
 .header-div2 {
@@ -55,28 +58,31 @@ body {
     font-size: 1rem;
 }
 
-/* .main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: ;
-} */
-
 
 /*Empiezan estilos de main*/
+
+.main-main {
+    display: flex;
+    justify-content: center;
+}
 
 .main {
     width: 100%;
     min-height: 100vh;
-    perspective: 1500px;
+    /* perspective: 1500px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 142.5px 142.5px 142.5px;
+    /* grid-template-rows: 142.5px 142.5px 142.5px; */
     grid-gap: 1em;
 }
 
 .main-div {
-    width: 100px;
-    height: 142.5px;
+    /*width: 100px
+    height: 142.5px*/
+    max-width: 200px;
+    max-height: 285px;
+    width: 31.25vw;
+    height: 44.53125vw;
     position: relative;
     transform: rotateY(0deg);
     transition: all 1s;
@@ -86,28 +92,17 @@ body {
 }
 
 
-/* .main-div:hover {
-    transform: rotateY(180deg);
-} */
-
 .main-div-card-info {
     position: absolute;
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
-/*     opacity: 0;
-    transition: opacity 1s; */
-    /* background-image: url('img/ekko.jpg'); */
-    /* background-size: cover; */
     font-family: 'Beaufort for LOL';
     font-style: italic;
     font-weight: bold;
     transform: translateZ(-2px) rotateY(180deg);
-    /* backface-visibility: hidden; */
     display: flex;
     align-items: end;
-    /* backface-visibility: hidden; */
-
 }
 
 
@@ -122,7 +117,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    display: inline-block;
+    display: block;
 }
 
 .turn-card {

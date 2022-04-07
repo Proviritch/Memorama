@@ -1,0 +1,21 @@
+.header-div2 {
+    font-size: 3rem;
+}
+
+.record {
+    font-size: 1.5rem;
+}
+
+.main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-div {
+    width: 15.625vw;
+    height: 22.265625vw;
+}
+
+.main {
+    width: 65vw;
+}
+
